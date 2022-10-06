@@ -189,10 +189,36 @@ import numpy as np
 # var = np.array([[1,2,3,4],[6,7,8,9],[4,9,5,4]])
 # print(var.shape)
 
-var2 = np.array([1,2,3,4,5,6,7,8,9],ndmin=10)
-print(var2)
-print(var2.shape)
+# var2 = np.array([1,2,3,4,5,6,7,8,9],ndmin=10)
+# print(var2)
+# print(var2.shape)
 
-x=var2.reshape(3,3)
-print(x)
-print(x.ndim)
+# x=var2.reshape(3,3)
+# print(x)
+# print(x.ndim)
+
+
+                            #Arithamatic Operations
+
+var = np.array([1,2,3,4])
+values = var / 3
+values1 = var + 3
+values2= var - 3
+values3 = var * 3
+values4 = var ** 3
+print(values)
+print(values1)
+print(values2)
+print(values3)
+print(values4)
+
+print("-------------------------------")
+data1=np.array([[1,2,3],[7,8,9]])
+data2 = np.array([[9,8,7],[3,2,1]])
+
+sum = data1+data2
+print(sum)
+print("-------------------------------")
+
+value = np.array([4,5,6,7])
+print(np.max(value))         #min,max,argmin,sqrt,sin,cos,cumsum
