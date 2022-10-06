@@ -177,9 +177,22 @@ import numpy as np
 # var1 = np.array([5,5,6,7,8,2],dtype='f')  #np.int8 , "f" or np.float
 # print(var1)                         
 
-x2 = np.array([1,2,3,4,5])
-new = np.float32(x2)
-print(x2.dtype)
-print(x2)
-print(new)
-print(new.dtype)
+# x2 = np.array([1,2,3,4,5])
+# new = np.float32(x2)
+# print(x2.dtype)
+# print(x2)
+# print(new)
+# print(new.dtype)
+
+
+                             #Shape
+# var = np.array([[1,2,3,4],[6,7,8,9],[4,9,5,4]])
+# print(var.shape)
+
+var2 = np.array([1,2,3,4,5,6,7,8,9],ndmin=10)
+print(var2)
+print(var2.shape)
+
+x=var2.reshape(3,3)
+print(x)
+print(x.ndim)
